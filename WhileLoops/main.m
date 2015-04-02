@@ -11,9 +11,13 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int i = 0;
-        while (0>i && i>100) {
-            NSLog(@"%i\n", i);
-            
+        bool done = false;
+        while (!done) {
+            NSLog(@"Hello World, %i", i);
+            if (i >= 1000){
+                done = true;
+            }
+            i++;
                 
         }
         
